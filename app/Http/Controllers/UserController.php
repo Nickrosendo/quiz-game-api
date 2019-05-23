@@ -47,10 +47,8 @@ class UserController extends Controller
     public function saveUserWin(User $user){ 
         
         $user->wins = request('wins');
-        // return dd($request->all(), $id);
         $user->save();
         return $user;
-        // return dd($request->all());
     }
 
     /** 
